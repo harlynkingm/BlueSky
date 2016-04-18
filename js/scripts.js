@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
   // One page navigation
-  var lastId,
-      topMenu = $(".top-nav"),
+  var topMenu = $("header"),
       topMenuHeight = topMenu.outerHeight() + 15,
       menuItems = topMenu.find("a"),
       scrollItems = menuItems.map(function() {
@@ -12,7 +11,7 @@ jQuery(document).ready(function($) {
       });
   menuItems.click(function(e) {
       var href = $(this).attr("href"),
-          offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+          offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight - 50;
       $('html, body').stop().animate({
           scrollTop: offsetTop
       }, 300);
@@ -26,12 +25,5 @@ jQuery(document).ready(function($) {
       });
       cur = cur[cur.length - 1];
       var id = cur && cur.length ? cur[0].id : "";
-  
-      if (lastId !== id) {
-          lastId = id;
-          menuItems
-              .parent().removeClass("active-item")
-              .end().filter("[href=#" + id + "]").parent().addClass("active-item");
-      }
   });
 });  

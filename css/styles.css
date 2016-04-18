@@ -102,6 +102,29 @@ nav{
     margin: 10px;
   }
 
+.big-icon{
+  color: #39c;
+  font-size: 6em;
+  margin-bottom: 20px;
+}
+
+.separator{
+  max-width: 1140px;
+  margin: auto;
+  border-bottom: 1px solid #aaa;
+  margin-top: 30px;
+}
+
+#promises h3{
+  margin: 10px;
+  font-weight: 600;
+}
+
+#promises h4{
+  margin: 10px;
+  margin-bottom: 35px;
+}
+
 @media screen and (max-width:768px) {
   
   .top{
@@ -109,8 +132,10 @@ nav{
   }
   
   .text-on{
+    margin-left: 2%;
     font-size: 1em;
     top: 35vh;
+    text-align: center;
   }
   
   .logo{

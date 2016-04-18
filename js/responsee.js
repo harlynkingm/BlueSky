@@ -67,6 +67,9 @@ jQuery(document).ready(function($) {
   $('.nav-text').click(function() { 
     $('.top-nav > ul').toggleClass('show-menu', 'slow');
   }); 
+  $('header a').click(function(){
+    $('.top-nav > ul').toggleClass('show-menu', 'slow');
+  });
   //Custom forms
   $(function() {
     var input = document.createElement("input");
