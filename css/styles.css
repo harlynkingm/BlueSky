@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'SourceSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/font/SourceSansPro-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'SourceSans';
+  font-style: normal;
+  font-weight: 900;
+  src: url(/font/SourceSansPro-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'SourceSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/SourceSansPro-Light.otf) format('opentype');
+}
+
+body{
+  font-family: SourceSans;
+  padding-bottom: 100px;
+}
+
+nav{
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  color: #39c;
+  font-size: 28px;
+  margin-top: .4em;
+  font-weight: 100;
+}
+
+.top-nav li a{
+  color: #39c;
+}
+
+.top-nav li{
+  border-bottom: 2px solid #fff;
+  font-weight: 600;
+}
+
+.top-nav li:hover{
+  background: #f5f5f5;
+  border-bottom: 2px solid #39c;
+  transition: .2s;
+}
+
+.top{
+  padding-top: 60px;
+  max-height: 80vh;
+  overflow: hidden;
+/*
+  background-image: url('img/blueSky.jpg');
+  background-repeat:no-repeat;
+  background-position: top;
+*/
+}
+
+.text-on{
+  position: absolute;
+  top: 20%;
+  font-size: 2em;
+}
+
+#vid{
+  width: 100%;
+  -webkit-filter: contrast(1.2);
+  filter: contrast(1.2);
+}
+
+.sect-head{
+  font-size: 3em;
+  color: #39c;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+  .sect{
+    margin: 10px;
+  }
+
+@media screen and (max-width:768px) {
+  
+  .top{
+    padding-top: 130px;
+  }
+  
+  .text-on{
+    font-size: 1em;
+    top: 20vh;
+  }
+  
+  .logo{
+    text-align: center;
+    margin-bottom: .4em;
+  }
+  
+  .nav-text{
+    text-align:center;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .mobile-center{
+    float: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .text-on{
+    top: 30vh;
+  }
+}
