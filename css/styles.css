@@ -54,19 +54,35 @@ nav{
 
 .top{
   padding-top: 60px;
-  max-height: 80vh;
+  height: 80vh;
   overflow: hidden;
-/*
-  background-image: url('img/blueSky.jpg');
+  background-image: url('../img/blueSky2.jpg');
   background-repeat:no-repeat;
-  background-position: top;
-*/
+  background-position:bottom;
+  background-size: cover;
+  animation-name: top-img;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: -50px;
+  padding-left: 50px;
+  -webkit-animation-timing-function: ease-in-out; /* Chrome, Safari, Opera */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes top-img{
+  0%{
+    background-position-x:  0px;
+  }
+  100%{
+    background-position-x: 50px;
+  }
 }
 
 .text-on{
   position: absolute;
   top: 20%;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
 #vid{
@@ -94,7 +110,7 @@ nav{
   
   .text-on{
     font-size: 1em;
-    top: 20vh;
+    top: 35vh;
   }
   
   .logo{
