@@ -2,21 +2,21 @@
   font-family: 'SourceSans';
   font-style: normal;
   font-weight: 700;
-  src: url(/font/SourceSansPro-Regular.otf) format('opentype');
+  src: url(../font/SourceSansPro-Regular.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'SourceSans';
   font-style: normal;
   font-weight: 900;
-  src: url(/font/SourceSansPro-Bold.otf) format('opentype');
+  src: url(../font/SourceSansPro-Bold.otf) format('opentype');
 }
 
 @font-face {
   font-family: 'SourceSans';
   font-style: normal;
   font-weight: 400;
-  src: url(/font/SourceSansPro-Light.otf) format('opentype');
+  src: url(../font/SourceSansPro-Light.otf) format('opentype');
 }
 
 body{
