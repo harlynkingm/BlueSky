@@ -19,9 +19,8 @@
   src: url(../font/SourceSansPro-Light.otf) format('opentype');
 }
 
-body{
+body, footer{
   font-family: SourceSans;
-  padding-bottom: 100px;
 }
 
 nav{
@@ -106,6 +105,13 @@ nav{
   color: #39c;
   font-size: 6em;
   margin-bottom: 20px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+  transition: .2s;
+}
+
+.big-icon:hover{
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+  font-size: 7em;
 }
 
 .separator{
@@ -125,7 +131,28 @@ nav{
   margin-bottom: 35px;
 }
 
+.person{
+  padding-bottom: 30px;
+}
+
+footer{
+  height: 100px;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.foot{
+  line-height: 100px;
+}
+
 @media screen and (max-width:768px) {
+  .foot{
+    line-height: 40px;
+    float:none;
+    text-align: center;
+    display: block;
+  }
   
   .top{
     padding-top: 130px;
