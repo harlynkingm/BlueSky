@@ -114,6 +114,12 @@ nav{
   font-size: 7em;
 }
 
+.bullet{
+  float:left;
+  padding-right:10px;
+  margin:0;
+}
+
 .separator{
   max-width: 1140px;
   margin: auto;
@@ -144,6 +150,24 @@ footer{
 
 .foot{
   line-height: 100px;
+}
+
+#strategy ul{
+  display: table;
+  margin-left: 0;
+  padding-left: 0;
+  list-style:none;
+}
+
+#strategy li{
+  display: table-row;
+  font-size: 1.6em;
+}
+
+#strategy li::before{
+  content: "•";
+  display: table-cell;
+  padding-right: 0.4em;
 }
 
 @media screen and (max-width:768px) {
