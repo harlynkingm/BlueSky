@@ -82,6 +82,7 @@ nav{
   position: absolute;
   top: 20%;
   font-size: 1.4em;
+  text-align: center;
 }
 
 #vid{
@@ -137,8 +138,14 @@ nav{
   margin-bottom: 35px;
 }
 
+#promises div{
+  text-align:justify;
+  text-align-last:center;
+}
+
 .person{
   padding-bottom: 30px;
+  text-align: justify;
 }
 
 footer{
@@ -186,7 +193,6 @@ footer{
     margin-left: 2%;
     font-size: 1em;
     top: 35vh;
-    text-align: center;
   }
   
   .logo{
